@@ -1,0 +1,44 @@
+@media (max-width: 727px) {
+
+    .header-top nav{
+        margin-left: 15% !important;
+        flex-wrap: nowrap !important;
+    }
+
+   .text-article-top{
+    font-size: 1.5rem !important;
+   }
+   #img-js{
+    width: 46%;
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 16px;
+   }
+   .info-article-one{
+    font-size: 1.1rem !important;
+   }
+   .article-main-two{
+    flex-direction: column !important;
+    border: 1px solid red;
+   }
+
+   .card-article{
+    flex-direction: row !important;
+    width: 90% !important;
+    height: 10% !important;
+    }
+
+   .view-more{
+    width: 70px !important;
+    height: 50px !important;
+   }
+
+   .register-email{
+    width: 100% !important;
+    text-align: center;
+   }
+}
+
+@media (max-width: 768) {
+
+}

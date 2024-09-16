@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Tec_Study</title>
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -42,7 +46,7 @@
 
             <article>
                 <header>
-                    <h1 id="h1-article">CURSOS DE PROGRAMAÇÃO ONLINE GRATIS</h1>
+                    <h1 id="h1-article">CURSOS DE PROGRAMAÇÃO ONLINE E GRATIS</h1>
                 </header>
                 <article class="section-main-one">
                     <img id="img-js" src="/img/javascript-1.jpg" alt="">
@@ -50,7 +54,7 @@
                             <h3>CURSO DESTAQUE</h3>
                             <p>Programação de computadores - JavaScript e a web</p>
                             <h4>Khan Academy</h4>
-                            <a href="https://pt.khanacademy.org/computing/computer-programming" target="_blank"><button type="button">ACESSO</button></a>
+                            <a href="https://pt.khanacademy.org/computing/computer-programming" target="_blank"><button type="button" class="button-article">ACESSO</button></a>
                         </div>
             </article>
 
@@ -58,28 +62,26 @@
                 <div class="card-article">
                     <img class="img-card" src="/img/python-logo-A47526A426-seeklogo.com.png" alt="python">
                     <p>Fundamentos do Python 1</p>
-                    <p>CISCO Networking Academy</p>
-                    <a href="https://www.netacad.com/courses/python-essentials-1?courseLang=pt-BR" target="_blank"><button type="button">DETALHES</button></a>
+                    <span>CISCO Networking Academy</span>
+                    <a href="https://www.netacad.com/courses/python-essentials-1?courseLang=pt-BR" target="_blank"><button type="button" class="button-article">DETALHES</button></a>
                 </div>
                 
                 <div class="card-article">
                     <img class="img-card" src="img/brain.png" alt="brain">
-                    <p>Competência Transversal  Lógica de Programação</p>
-                    <p>SENAI</p>
-                    <a href="https://sp.senai.br/curso/competencia-transversal-logica-de-programacao/95088" target="_blank"><button type="button">DETALHES</button></a>
+                    <p>Competência Transversal <br> Lógica de Programação</p>
+                    <span>SENAI</span>
+                    <a href="https://sp.senai.br/curso/competencia-transversal-logica-de-programacao/95088" target="_blank"><button type="button" class="button-article">DETALHES</button></a>
                 </div>
 
                 <div class="card-article">
                     <img class="img-card" src="img/java.png" alt="java">
                     <p>Java Básico</p>
-                    <p>Curso em Vídeo</p>
-                    <a href="https://www.cursoemvideo.com/curso/java-basico/" target="_blank"><button type="button">DETALHES</button></a>
+                    <span>Curso em Vídeo</span>
+                    <a href="https://www.cursoemvideo.com/curso/java-basico/" target="_blank"><button type="button" class="button-article">DETALHES</button></a>
                 </div>
-
                 <div class="view-more">
                     <p>+</p>
                 </div>
-
             </article>
         </article>
     </main>
@@ -87,9 +89,9 @@
     <article>
         <header>
             <div class="register-email">
-                    <h2>Cadastre o e-mail e receba notificações de novos cursos gratuitos e promoções</h2>
-                    <input type="email" id="email" placeholder="joao@gmail.com">
-                    <button type="button" onclick="aviso()">Enviar</button>
+                <h2>Cadastre o e-mail e receba notificações de novos cursos gratuitos e promoções</h2>
+                <input type="email" id="email-value" placeholder="joao@gmail.com">
+                <button type="submit" class="button-article" onclick="aviso()">Enviar</button>
             </div>
         </header>
     </article>
@@ -103,16 +105,16 @@
                     <p>FRONT-END</p>
                     <p style="font-size: 1rem;">VEJA CURSOS SOBRE</p>
                 </div>
-            <img class="img-card" src="/img/front-end.png" alt="">
+            <img src="/img/front-end.png" alt="">
             <p>Front-end é a parte visual de um site ou aplicativo, que é a área onde os usuários interagem com a aplicação</p>
         </section>
 
         <section class="card">
-                <div class="top-element-card">
+                <div class="top-element-card2">
                     <p>BACK-END</p>
                     <p style="font-size: 1rem;">VEJA CURSOS SOBRE</p>
                 </div>
-            <img class="img-card" src="/img/back-end.png" alt="" style="width: 40%;">
+            <img src="/img/back-end.png" alt="" style="width: 40%;">
             <p>Back-end é a parte interna de uma aplicação, quando um usuário interage com um site</p>
         </section>
 
@@ -150,5 +152,15 @@
             </article>
     </footer>
 
+    <script>
+        function aviso(){
+            email = document.getElementById('email-value').value
+            if (email.includes('@gmail.com') || email.includes('@outlook.com') || email.includes('@fatec.sp.gov.br')) {
+                alert("Email cadastrado com sucesso.")
+            }else{
+                alert("Email invalido.")
+            }
+        }
+    </script>
 </body>
 </html>
