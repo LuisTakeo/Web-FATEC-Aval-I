@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Tec_Study</title>
-    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -16,33 +16,34 @@
 <body>
 
     <header>
-        <div class="header-top">
+        <section class="header-top">
             <img src="/img/tec_study.png" alt="Tec_Study">
-            <nav>
-                <ul>
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Cursos</a></li>
-                    <li><a href="">Sobre</a></li>
+            <nav class="nav-bar">
+                <span class="menu-hamburger">&#9776;</span>
+                <ul class="nav-list">
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/cursos">Cursos</a></li>
+                    <li><a href="/sobre">Sobre</a></li>
                     <li class="button-login">Login</li>
                 </ul>
             </nav>
-        </div>
+        </section>
     </header>
 
     <main>
         <article>
             <section class="section-one">
                 <header>
-                    <div class="text-article-top">
+                    <section class="text-article-top">
                         <h1>Qual curso você precisa?</h1>
-                    </div>
+                    </section>
                 </header>
-                <div class="input-search">
+                <section class="input-search">
                     <img src="/img/search.png" alt="Buscar">
-                </div>
+                </section>
             </section>
 
-            <div id="line"></div>
+            <section id="line"></section>
 
             <article>
                 <header>
@@ -50,38 +51,38 @@
                 </header>
                 <article class="section-main-one">
                     <img id="img-js" src="/img/javascript-1.jpg" alt="">
-                        <div class="info-article-one">
-                            <h3>CURSO DESTAQUE</h3>
-                            <p>Programação de computadores - JavaScript e a web</p>
-                            <h4>Khan Academy</h4>
-                            <a href="https://pt.khanacademy.org/computing/computer-programming" target="_blank"><button type="button" class="button-article">ACESSO</button></a>
-                        </div>
+                    <section class="info-article-one">
+                        <h3>CURSO DESTAQUE</h3>
+                        <p>Programação de computadores - JavaScript e a web</p>
+                        <h4>Khan Academy</h4>
+                        <a href="https://pt.khanacademy.org/computing/computer-programming" target="_blank"><button type="button" class="button-article">ACESSO</button></a>
+                    </section>
             </article>
 
             <article class="article-main-two">
-                <div class="card-article">
+                <section class="card-article">
                     <img class="img-card" src="/img/python-logo-A47526A426-seeklogo.com.png" alt="python">
                     <p>Fundamentos do Python 1</p>
                     <span>CISCO Networking Academy</span>
                     <a href="https://www.netacad.com/courses/python-essentials-1?courseLang=pt-BR" target="_blank"><button type="button" class="button-article">DETALHES</button></a>
-                </div>
-                
-                <div class="card-article">
+                </section>
+
+                <section class="card-article">
                     <img class="img-card" src="img/brain.png" alt="brain">
                     <p>Competência Transversal <br> Lógica de Programação</p>
                     <span>SENAI</span>
                     <a href="https://sp.senai.br/curso/competencia-transversal-logica-de-programacao/95088" target="_blank"><button type="button" class="button-article">DETALHES</button></a>
-                </div>
+                </section>
 
-                <div class="card-article">
+                <section class="card-article">
                     <img class="img-card" src="img/java.png" alt="java">
                     <p>Java Básico</p>
                     <span>Curso em Vídeo</span>
                     <a href="https://www.cursoemvideo.com/curso/java-basico/" target="_blank"><button type="button" class="button-article">DETALHES</button></a>
-                </div>
-                <div class="view-more">
+                </section>
+                <section class="view-more">
                     <p>+</p>
-                </div>
+                </section>
             </article>
         </article>
     </main>
@@ -152,7 +153,7 @@
             </article>
     </footer>
 
-    <script>
+    <script src="script.js">
         function aviso(){
             email = document.getElementById('email-value').value
             if (email.includes('@gmail.com') || email.includes('@outlook.com') || email.includes('@fatec.sp.gov.br')) {

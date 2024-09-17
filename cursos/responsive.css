@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .header-top .nav-bar
     {
@@ -6,6 +6,32 @@
         align-items: center;
         /* border: 2px solid red; */
         position: relative;
+    }
+    .section-main-one #img-js
+    {
+        width: 90%;
+        height: 300px;
+        /* border: 1px solid red; */
+    }
+    .info-article-one
+    {
+        margin: 10px 0;
+        /* border: 1px solid red; */
+        width: 90%;
+        text-align: center;
+    }
+    .section-main-one
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-article
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu-hamburger
@@ -18,6 +44,60 @@
         right: 0; */
         /* margin-right: 30px; */
         /* margin-top: 10px; */
+    }
+
+    footer
+    {
+        text-align: center;
+    }
+
+    .element-card
+    {
+        flex-direction: column;
+    }
+
+    .card
+    {
+        width: 100%;
+    }
+
+    .card p
+    {
+        font-size: 0.825rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .top-element-card
+    {
+        /* margin: 10px; */
+        width: 80%;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .iframe-video
+    {
+        width: 80%;
+        height: 300px;
+    }
+
+    .top-element-card h3
+    {
+        font-size: 1.025rem;
+        font-weight: 600;
+    }
+    .top-element-card p
+    {
+        font-size: .815rem;
+
+    }
+
+    .section-footer ul
+    {
+        padding: 0;
     }
 
     .nav-list
@@ -78,7 +158,7 @@
    }
    .article-main-two{
     flex-direction: column !important;
-    border: 1px solid red;
+    /* border: 1px solid red; */
    }
 
    .card-article{
@@ -95,6 +175,23 @@
    .register-email{
     width: 100% !important;
     text-align: center;
+   }
+
+   .article-main-three
+   {
+    width: 80%;
+    /* border: 1px solid red; */
+   }
+
+   .card-blocks
+   {
+    width: 90%;
+    /* border: 1px solid red; */
+   }
+
+   .info-article
+   {
+    width: 100%;
    }
 }
 
