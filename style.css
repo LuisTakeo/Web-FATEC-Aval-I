@@ -7,7 +7,7 @@ body{
     color: white;
     font-size: 10px;
     font-family: "Raleway";
-    background-image: url(/img/papeldeparede.jpg);
+    background-image: url(./img/papeldeparede.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: repeat;
