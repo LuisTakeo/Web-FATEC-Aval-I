@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
         <section class="header-top">
             <img src="./img/tec_study.png" alt="Tec_Study">
@@ -29,7 +28,6 @@
             </nav>
         </section>
     </header>
-
     <main>
         <article>
             <section class="section-one">
@@ -42,15 +40,13 @@
                     <img src="./img/search.png" alt="Buscar">
                 </section>
             </section>
-
             <section id="line"></section>
-
             <article>
                 <header>
                     <h1 id="h1-article">CURSOS DE PROGRAMAÇÃO ONLINE E GRATIS</h1>
                 </header>
                 <article class="section-main-one">
-                    <img id="img-js" src="./img/javascript-1.jpg" alt="">
+                    <img class="img-js" src="./img/javascript-1.jpg" alt="">
                     <section class="info-article-one">
                         <h3>CURSO DESTAQUE</h3>
                         <p>Programação de computadores - JavaScript e a web</p>
@@ -58,26 +54,29 @@
                         <a href="https://pt.khanacademy.org/computing/computer-programming" target="_blank"><button type="button" class="button-article">ACESSO</button></a>
                     </section>
             </article>
-
             <article class="article-main-two">
                 <section class="card-article">
                     <img class="img-card" src="./img/python-logo-A47526A426-seeklogo.com.png" alt="python">
+                        <div class="text">
                     <p>Fundamentos do Python 1</p>
                     <span>CISCO Networking Academy</span>
+                        </div>
                     <a href="https://www.netacad.com/courses/python-essentials-1?courseLang=pt-BR" target="_blank"><button type="button" class="button-article">DETALHES</button></a>
                 </section>
-
                 <section class="card-article">
                     <img class="img-card" src="img/brain.png" alt="brain">
-                    <p>Competência Transversal <br> Lógica de Programação</p>
-                    <span>SENAI</span>
+                    <div class="text">
+                        <p>Competência Transversal <br> Lógica de Programação</p>
+                        <span>SENAI</span>
+                    </div>
                     <a href="https://sp.senai.br/curso/competencia-transversal-logica-de-programacao/95088" target="_blank"><button type="button" class="button-article">DETALHES</button></a>
                 </section>
-
                 <section class="card-article">
                     <img class="img-card" src="img/java.png" alt="java">
-                    <p>Java Básico</p>
-                    <span>Curso em Vídeo</span>
+                    <div class="text">
+                        <p>Java Básico</p>
+                        <span>Curso em Vídeo</span>
+                    </div>
                     <a href="https://www.cursoemvideo.com/curso/java-basico/" target="_blank"><button type="button" class="button-article">DETALHES</button></a>
                 </section>
                 <section class="view-more">
@@ -86,7 +85,6 @@
             </article>
         </article>
     </main>
-
     <article>
         <header>
             <div class="register-email">
@@ -96,11 +94,8 @@
             </div>
         </header>
     </article>
-
     <h1 style="text-align: center; font-size: 2rem; margin: 40px; font-family: 'Share Tech Mono';letter-spacing: 8px;">QUAL SUA ÁREA DE INTERESSE?</h1>
-
     <article class="element-card">
-
         <section class="card">
                 <div class="top-element-card">
                     <p>FRONT-END</p>
@@ -109,7 +104,6 @@
             <img src="./img/front-end.png" alt="">
             <p>Front-end é a parte visual de um site ou aplicativo, que é a área onde os usuários interagem com a aplicação</p>
         </section>
-
         <section class="card">
                 <div class="top-element-card2">
                     <p>BACK-END</p>
@@ -118,16 +112,14 @@
             <img src="./img/back-end.png" alt="" style="width: 40%;">
             <p>Back-end é a parte interna de uma aplicação, quando um usuário interage com um site</p>
         </section>
-
     </article>
-
     <footer>
         <p style="font-size: 1rem; text-align: center; margin: 30px;">Educação é um direito de todos.</p>
             <article class="footer-article">
                 <section class="section-footer">
                     <p><a href="" style="font-weight: bold;">INICIO</a></p>
                     <ul>
-                        <li><a href="#">Cursos</a></li>
+                        <li><a href="/cursos/index.html">Cursos</a></li>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Login</a></li>
                         <li><a href="#">Cadastro</a></li>
@@ -152,7 +144,6 @@
                 </section>
             </article>
     </footer>
-
     <script src="script.js">
         function aviso(){
             email = document.getElementById('email-value').value

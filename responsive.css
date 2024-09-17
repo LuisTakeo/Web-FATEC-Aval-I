@@ -7,7 +7,6 @@
         /* border: 2px solid red; */
         position: relative;
     }
-
     .menu-hamburger
     {
         display: flex;
@@ -19,7 +18,6 @@
         /* margin-right: 30px; */
         /* margin-top: 10px; */
     }
-
     .nav-list
     {
         padding: 0;
@@ -67,37 +65,48 @@
    .text-article-top{
     font-size: 1.5rem !important;
    }
-   #img-js{
-    width: 46%;
-    height: 200px;
-    border-radius: 15px;
-    margin-top: 16px;
+   .section-main-one{
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 30%;
+        margin-top: 30%;
+        text-align: center;
    }
    .info-article-one{
     font-size: 1.1rem !important;
    }
    .article-main-two{
-    flex-direction: column !important;
-    border: 1px solid red;
+    flex-direction: column ;
    }
-
    .card-article{
     flex-direction: row !important;
     width: 90% !important;
     height: 10% !important;
+    margin: 0px 0px 5% 0;
     }
-
+    .text{
+      display: flex;
+      flex-direction: column;  
+      margin-bottom: 15px;
+    }
+    .img-card{
+        width: 15%;
+        height: auto;
+    }
    .view-more{
-    width: 70px !important;
+    width: 50px !important;
     height: 50px !important;
    }
-
+   .button-article{
+    width: 100%;
+    word-break: keep-all;
+   }
    .register-email{
     width: 100% !important;
     text-align: center;
    }
+   .top-element-card, .top-element-card2{
+    white-space: nowrap;
+   }
 }
 
-@media (max-width: 768) {
-
-}
