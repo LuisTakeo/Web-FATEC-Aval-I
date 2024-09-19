@@ -83,6 +83,10 @@ body{
     overflow: hidden;
     animation: cursor 500ms steps(40) infinite, type 7s steps(40) infinite;
 }
+.text
+{
+    text-align: center;
+}
 @keyframes type {
     0% { width: 0; }
     50% { width: 100%; }
@@ -121,10 +125,11 @@ body{
 }
 .section-main-one{
     width: 86%;
-    height: 300px;
+    /* height: 300px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
     margin-left: 8%;
 }
@@ -155,6 +160,9 @@ body{
 .img-js{
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    /* height: 320px; */
+
 }
 #h1-article{
     margin: 40px 8% 40px 8%;
