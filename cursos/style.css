@@ -498,7 +498,7 @@ footer{
     /* border: 1px solid red; */
     display: flex;
     width: 45%;
-    min-width: 350px;
+    min-width: 320px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;

@@ -1,5 +1,9 @@
 @media screen and (max-width: 768px) {
 
+    main
+    {
+        width: 100%;
+    }
     .header-top .nav-bar
     {
         justify-content: center;
@@ -192,6 +196,12 @@
    .info-article
    {
     width: 100%;
+   }
+   .content-destaque
+   {
+        width: 90%;
+        margin: 0;
+    /* border: 1px solid red; */
    }
 }
 
