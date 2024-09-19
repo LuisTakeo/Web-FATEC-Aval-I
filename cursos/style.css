@@ -5,6 +5,11 @@ body{
     margin: 0;
     padding: 0;
     background-color: #232D3F;
+    background-image: url("./img/papeldeparede.jpg");
+    background-size: cover;
+    background-position: top;
+    background-size: cover;
+    background-repeat: repeat;
     color: white;
     font-size: 10px;
     font-family: "Raleway";

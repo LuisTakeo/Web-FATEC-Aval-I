@@ -1,5 +1,21 @@
 @media (max-width: 768px) {
+    .section-one header
+    {
+        /* width: 100%; */
+    }
 
+    .section-one header .text-article-top
+    {
+        /* width: 100%; */
+        /* font-size: 1.5rem; */
+        letter-spacing: .001cap;
+        /* text-align: center; */
+    }
+    .section-one header .text-article-top h1
+    {
+        /* margin: 3rem auto; */
+        /* width: 80%; */
+    }
     .header-top .nav-bar
     {
         justify-content: center;
@@ -62,9 +78,9 @@
         margin-left: 0;
     } */
 
-   .text-article-top{
+   /* .text-article-top{
     font-size: 1.5rem !important;
-   }
+   } */
    .section-main-one{
         flex-direction: column;
         position: relative;
@@ -74,19 +90,20 @@
    }
    .info-article-one{
     font-size: 1.1rem !important;
+    margin: 0;
    }
    .article-main-two{
     flex-direction: column ;
    }
    .card-article{
-    flex-direction: row !important;
-    width: 90% !important;
-    height: 10% !important;
+    flex-direction: row;
+    width: 90%;
+    height: 10%;
     margin: 0px 0px 5% 0;
     }
     .text{
       display: flex;
-      flex-direction: column;  
+      flex-direction: column;
       margin-bottom: 15px;
     }
     .img-card{
@@ -108,5 +125,63 @@
    .top-element-card, .top-element-card2{
     white-space: nowrap;
    }
+
+   .element-card
+   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    /* margin: 0 0 5% 0; */
+   }
+
+   .card
+   {
+    width: 90%;
+   }
+
+   /* Footer */
+   footer
+    {
+        text-align: center;
+    }
+
+   .footer-article
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-footer ul
+    {
+        padding: 0;
+    }
 }
 
+
+@media (max-width: 425px)
+{
+    .section-one header
+    {
+        width: 100%;
+        letter-spacing: 0ch;
+
+    }
+    .section-one header .text-article-top
+    {
+        width: 100%;
+        font-size: 1.5rem;
+        letter-spacing: 0ch;
+        text-align: center;
+    }
+
+    .card-article{
+        flex-direction: column;
+        width: 90%;
+        margin: 0px 0px 5% 0;
+        text-align: center;
+    }
+}
